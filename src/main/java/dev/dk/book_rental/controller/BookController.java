@@ -6,6 +6,7 @@ import dev.dk.book_rental.service.BookService;
 import dev.dk.book_rental.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,11 +39,11 @@ public class BookController {
 
         int user_no = ((UserDto)request.getSession().getAttribute("userInfo")).getUser_no();
 
-        bookService.setReturnBook(book_no);
+        bookService.setReturnBook(book_no, user_no);
 
         return "redirect:/book/list";
-
     }
+
     @PostMapping("lend")
     public String book_lend(HttpServletRequest request) {
 
@@ -61,6 +62,7 @@ public class BookController {
         }
 
         return "redirect:/book/list.html";
+//        return "redirect:/book/list";
 
     }
 
@@ -103,6 +105,7 @@ public class BookController {
 
 
         return "redirect:/book/list.html";
+//        return "redirect:/book/list";
 
     }
 
@@ -140,7 +143,7 @@ public class BookController {
 //        model.addAttribute("book_list", book_list);
 
         return "redirect:/book/list.html";
-//        return "/book/list";
+//        return "/book/list1";
 
     }
 

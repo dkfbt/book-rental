@@ -105,6 +105,7 @@ public class UserController {
     public String user_add_form() {
 
         return "redirect:/user/add_form.html";
+//        return "/user/add_form";
     }
     @PostMapping("")
     public String user_index() {

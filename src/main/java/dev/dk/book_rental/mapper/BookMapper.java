@@ -25,4 +25,5 @@ public interface BookMapper {
 
     void updateReturnBook(@Param(value = "book_no") int book_no);
 
+    void updateReturnCount(int user_no);
 }

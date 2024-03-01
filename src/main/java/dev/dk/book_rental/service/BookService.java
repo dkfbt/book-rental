@@ -55,9 +55,11 @@ public class BookService {
         bookMapper.updateRentalCount(user_no);
     }
 
-    public void setReturnBook(int book_no) {
+    public void setReturnBook(int book_no, int user_no) {
 
         bookMapper.updateReturnBook(book_no);
+
+        bookMapper.updateReturnCount(user_no);
 
     }
 }
