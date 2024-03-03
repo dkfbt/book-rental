@@ -78,9 +78,7 @@
     <update id="updateReturnCount">
 
         UPDATE user
-
         SET on_rental_count = on_rental_count - 1
-
         WHERE user_no = ${user_no}
     </update>
 
