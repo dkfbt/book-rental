@@ -6,6 +6,7 @@
 *.iws
 *.jar
 !libs/**/*.jar
+!gradle-wrapper.jar
 *.sw?
 *~
 .#*
@@ -27,6 +28,7 @@ _site/
 activemq-data
 bin
 build
+build/
 !/**/src/**/bin
 !/**/src/**/build
 build.log
