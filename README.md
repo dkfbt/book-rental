@@ -1,11 +1,13 @@
 # [book_rental]
 ---
-### 사용 언어
+### 사용 언어 및 라이브러리
 * Java
 * html5
 * CSS
 * Javascript
 * JQuery
+* DataTables
+* Bootstrap
 ---
 
 ### 개발 환경 및 도구
@@ -23,6 +25,6 @@
 --- 
 
 ### 홈페이지 주소 및 login id & pw
-* http://52.78.37.11:8080/
+* http://3.34.4.82:8080/
 * id: 1 ~ 9까지 숫자 중 선택 
 * pw: 1234 
